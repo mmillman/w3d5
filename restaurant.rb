@@ -1,5 +1,5 @@
 require 'sqlite3'
-require_relative 'restaurant_review_database'
+require_relative 'restaurant_reviews_database'
 
 class Restaurant
 
@@ -9,13 +9,13 @@ class Restaurant
   end
 
   def self.by_neighborhood(neighborhood)
-    rr_data = RestaurantReviewDatabase.execute(<<-SQL, neighborhood)
+    rr_data = RestaurantReviewsDatabase.execute(<<-SQL, neighborhood)
       SELECT *
         FROM restaurants
        WHERE neighborhood = ?
     SQL
 
-    rr_data.map { |result| Restaurant.new(result) }
+    rr_data.map { |rr_datum| Restaurant.new(rr_datum) }
   end
 
   def reviews

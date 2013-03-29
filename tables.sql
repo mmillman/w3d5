@@ -73,6 +73,15 @@ CREATE TABLE chef_tenures (
   end_date DATE NOT NULL
 );
 
+INSERT INTO chef_tenures (id, chef_id, restaurant_id, start_date, end_date)
+VALUES (NULL, 1, 1, '2010-03-02', '2011-03-02'),
+       (NULL, 2, 1, '2011-03-02', '2012-03-02'),
+       (NULL, 3, 1, '2012-03-02', '2013-03-02'),
+       (NULL, 4, 1, '2012-03-02', '2013-03-02'),
+       (NULL, 5, 1, '2012-03-02', '2013-03-02');
+
+
+
 CREATE TABLE critics (
   id INTEGER PRIMARY KEY,
   screen_name VARCHAR(255) NOT NULL

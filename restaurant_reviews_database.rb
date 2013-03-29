@@ -1,7 +1,7 @@
 require 'sqlite3'
 require 'singleton'
 
-class RestaurantReviewDatabase < SQLite3::Database
+class RestaurantReviewsDatabase < SQLite3::Database
 
   include Singleton
 

@@ -1,5 +1,5 @@
 require 'sqlite3'
-require 'restaurant_review_database'
+require_relative 'restaurant_reviews_database'
 
 class Chef
 
