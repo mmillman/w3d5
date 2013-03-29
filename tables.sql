@@ -96,13 +96,13 @@ CREATE TABLE restaurant_reviews (
 );
 
 INSERT INTO restaurant_reviews (id, restaurant_id, critic_id, review, score, review_date)
-VALUES (NULL, 1, 2, "These guys serves great code, yum!", 20, '2013-1-24'),
+VALUES (NULL, 1, 2, "These guys serves great code, yum!", 20, '2013-01-24'),
        (NULL, 2, 2, "Fast, cheap, and close. Awesome!", 20, '2012-12-15'),
-       (NULL, 3, 1, "How are these guys still in business?!", 1, '2013-1-24'),
-       (NULL, 4, 3, "This name is too long.", 6, '2013-1-24'),
-       (NULL, 5, 4, "This place didn't have enough cheerios.", 5, '2013-1-24'),
+       (NULL, 3, 1, "How are these guys still in business?!", 1, '2013-01-24'),
+       (NULL, 4, 3, "This name is too long.", 6, '2013-01-24'),
+       (NULL, 5, 4, "This place didn't have enough cheerios.", 5, '2013-01-24'),
 
-       (NULL, 6, 2, "Oh Em Gee, so good!", 19, '2012-9-16'),
-       (NULL, 7, 4, "Found some cheerios on the floor, this place rocks!", 20, '2013-1-24'),
-       (NULL, 11, 5, "They didn't have any pad thai :()", 10, '2011-5-14'),
-       (NULL, 17, 5, "They had lots of pad thai! :D", 20, '2011-5-17');
+       (NULL, 6, 2, "Oh Em Gee, so good!", 19, '2012-09-16'),
+       (NULL, 7, 4, "Found some cheerios on the floor, this place rocks!", 20, '2013-01-24'),
+       (NULL, 11, 5, "They didn't have any pad thai :()", 10, '2011-05-14'),
+       (NULL, 17, 5, "They had lots of pad thai! :D", 20, '2011-05-17');

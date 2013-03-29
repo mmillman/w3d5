@@ -1,4 +1,5 @@
-require 'sqlite'
+require 'sqlite3'
+require 'restaurant_review_database'
 
 class Critic
 

@@ -1,11 +1,11 @@
-require 'singleton'
 require 'sqlite3'
+require 'singleton'
 
 class RestaurantReviewDatabase < SQLite3::Database
 
-  include 'singleton'
+  include Singleton
 
-  def initialize()
+  def initialize
     super('rr_database.db')
 
     self.results_as_hash = true
