@@ -3,6 +3,8 @@ require_relative 'restaurant_reviews_database'
 
 class RestaurantReview
 
+  attr_accessor :score
+
   def initialize(options)
     @id, @restaurant_id, @critic_id, @review, @score, @review_date =
       options.values_at("id", "restaurant_id", "critic_id", "review", "score", "review_date")

@@ -3,6 +3,7 @@ CREATE TABLE chefs (
   first_name VARCHAR(255) NOT NULL,
   last_name VARCHAR(255) NOT NULL,
   mentor INTEGER
+  -- ADD FOREIGN KEY CONSTRAINTS
 );
 
 INSERT INTO chefs (id, first_name, last_name, mentor)
@@ -40,6 +41,7 @@ CREATE TABLE restaurants (
   name VARCHAR(255) NOT NULL,
   neighborhood VARCHAR(255) NOT NULL,
   cuisine VARCHAR(255) NOT NULL
+  -- ADD FOREIGN KEY CONSTRAINTS
 );
 
 INSERT INTO restaurants (id, name, neighborhood, cuisine)
@@ -71,6 +73,7 @@ CREATE TABLE chef_tenures (
   restaurant_id INTEGER NOT NULL,
   start_date DATE NOT NULL,
   end_date DATE NOT NULL
+  -- ADD FOREIGN KEY CONSTRAINTS
 );
 
 INSERT INTO chef_tenures (id, chef_id, restaurant_id, start_date, end_date)
@@ -85,6 +88,7 @@ VALUES (NULL, 1, 1, '2010-03-02', '2011-03-02'),
 CREATE TABLE critics (
   id INTEGER PRIMARY KEY,
   screen_name VARCHAR(255) NOT NULL
+  -- ADD FOREIGN KEY CONSTRAINTS
 );
 
 INSERT INTO critics (id, screen_name)
@@ -102,6 +106,7 @@ CREATE TABLE restaurant_reviews (
   review TEXT NOT NULL,
   score INTEGER NOT NULL,
   review_date DATE NOT NULL
+  -- ADD FOREIGN KEY CONSTRAINTS
 );
 
 INSERT INTO restaurant_reviews (id, restaurant_id, critic_id, review, score, review_date)
