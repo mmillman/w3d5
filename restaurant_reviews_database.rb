@@ -2,7 +2,6 @@ require 'sqlite3'
 require 'singleton'
 
 class RestaurantReviewsDatabase < SQLite3::Database
-
   include Singleton
 
   def initialize
@@ -16,4 +15,7 @@ class RestaurantReviewsDatabase < SQLite3::Database
     self.instance.execute(*args)
   end
 
+  def self.get_first_value(*args)
+    self.instance.get_first_value(*args)
+  end
 end

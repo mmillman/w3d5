@@ -20,7 +20,7 @@ VALUES (NULL, 'Ned', 'Ruggeri', 1),
        (NULL, 'Darwish', 'Gani', 3),
 
        (NULL, 'Brian', 'Heithaus', 3),
-       (NULL, 'Darwish', 'Gani', 3),
+       (NULL, 'April', 'Goldman', 3),
        (NULL, 'Dylan', 'Clark', 4),
        (NULL, 'Rich', 'Wallett', 4),
        (NULL, 'David', 'Xu', 4),
@@ -77,11 +77,17 @@ CREATE TABLE chef_tenures (
 );
 
 INSERT INTO chef_tenures (id, chef_id, restaurant_id, start_date, end_date)
-VALUES (NULL, 1, 1, '2010-03-02', '2011-03-02'),
-       (NULL, 2, 1, '2011-03-02', '2012-03-02'),
-       (NULL, 3, 1, '2012-03-02', '2013-03-02'),
-       (NULL, 4, 1, '2012-03-02', '2013-03-02'),
-       (NULL, 5, 1, '2012-03-02', '2013-03-02');
+VALUES (NULL, 1, 1, '2008-03-02', '2013-03-02'),
+       (NULL, 2, 1, '2009-01-02', '2010-05-22'),
+       (NULL, 3, 1, '2009-04-02', '2013-03-02'),
+       (NULL, 4, 1, '2011-03-19', '2011-09-10'),
+       (NULL, 5, 1, '2013-03-03', '2013-03-20'),
+
+       (NULL, 6, 2, '2008-03-02', '2013-03-02'),
+       (NULL, 7, 2, '2009-01-02', '2010-05-22'),
+       (NULL, 8, 2, '2009-04-02', '2013-03-02'),
+       (NULL, 9, 2, '2011-03-19', '2011-09-10'),
+       (NULL, 10, 2, '2013-03-03', '2013-03-20');
 
 
 
@@ -112,6 +118,9 @@ CREATE TABLE restaurant_reviews (
 INSERT INTO restaurant_reviews (id, restaurant_id, critic_id, review, score, review_date)
 VALUES (NULL, 1, 2, "These guys serves great code, yum!", 20, '2013-01-24'),
        (NULL, 2, 2, "Fast, cheap, and close. Awesome!", 20, '2012-12-15'),
+       (NULL, 2, 1, "Fast, cheap, and close. So annoying!", 2, '2011-12-13'),
+       (NULL, 2, 5, "Needs more pad thai sandwiches", 7, '2012-08-01'),
+       (NULL, 2, 4, "These guys don't have a cheerios topping. Huge mistake.", 4, '2012-09-11'),
        (NULL, 3, 1, "How are these guys still in business?!", 1, '2013-01-24'),
        (NULL, 4, 3, "This name is too long.", 6, '2013-01-24'),
        (NULL, 5, 4, "This place didn't have enough cheerios.", 5, '2013-01-24'),
